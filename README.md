@@ -46,6 +46,7 @@ A session object is a JSON object which once set will be attached to every messa
                 "Key": "Age",
                 "Type": "NumberField",
                 "DefaultValue": "42",
+                "InstantSending":true,
                 "Required":false
             },
             {
@@ -53,6 +54,7 @@ A session object is a JSON object which once set will be attached to every messa
                 "Key": "Text",
                 "Type": "TextView",
                 "DefaultValue": "Don't panic!",
+                "InstantSending":false,
                 "Required":false
             },
             {
@@ -60,6 +62,7 @@ A session object is a JSON object which once set will be attached to every messa
                 "Key": "Glasses",
                 "Type": "Switch",
                 "DefaultValue": "False",
+                "InstantSending":false,
                 "Required":false
             },
             {
@@ -69,6 +72,7 @@ A session object is a JSON object which once set will be attached to every messa
                 "MinimumValue":0,
                 "MaximumValue":1,
                 "DefaultValue": 0.5,
+                "InstantSending":false,
                 "Required":false
             },
             {
@@ -78,6 +82,7 @@ A session object is a JSON object which once set will be attached to every messa
                 "MinimumValue":1,
                 "MaximumValue":5,
                 "DefaultValue":2,
+                "InstantSending":false,
                 "Required":false
             },
             {
@@ -85,6 +90,8 @@ A session object is a JSON object which once set will be attached to every messa
                 "Key": "Name",
                 "Type": "TextField",
                 "DefaultValue": "Kristian",
+                "InstantSending":false,
+                
                 "Required":true
             }
         ],
