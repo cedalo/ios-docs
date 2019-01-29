@@ -66,14 +66,18 @@ A session object is a JSON object which once set will be attached to every messa
                 "Label": "Liter",
                 "Key": "Liter",
                 "Type": "Slider",
-                "DefaultValue": "42",
+                "MinimumValue":0,
+                "MaximumValue":1,
+                "DefaultValue": 0.5,
                 "Required":false
             },
             {
                 "Label": "Monitore",
                 "Key": "Displays",
                 "Type": "Stepper",
-                "DefaultValue": "2",
+                "MinimumValue":1,
+                "MaximumValue":5,
+                "DefaultValue":2,
                 "Required":false
             },
             {
