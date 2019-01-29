@@ -4,7 +4,7 @@ This iOS App serves mainly as a client for users to interact with the Cedalo Str
 It can display information user friendly and also ask the user to enter values and select options which can then be sent back to a certain topic. Also it is possible to send sensor values of the iPhone either in a set interval or on every incoming message. Furthermore the content of QR-codes, messages stored in NFC tags or pictures shot on the iPhone's camera can also be published.
 
 ## MQTT
-MQTT stands for Message Queuing Telemetry Transport). It is a network protocol based on the publish-subscribe pattern. For the time being it is the only messaging protocol support by MQTT Connect. It requires a server to communicate over - a so-called broker.
+MQTT stands for Message Queuing Telemetry Transport. It is a network protocol based on the publish-subscribe pattern. For the time being it is the only messaging protocol supported by MQTT Connect. It requires a server to communicate over - a so-called broker.
 Every client can choose a topic to publish messages to and also subscribe topics to receive messages from. A topic could look like this: 'company/department/colleague'. To include all subtopics you can simply use a wild card(#). Subscribing to the topics of all colleagues of a certain department can be done like this: 'company/department/#'.
 
 ## First Steps
@@ -45,13 +45,43 @@ A session object is a JSON object which once set will be attached to every messa
                 "Label": "Alter",
                 "Key": "Age",
                 "Type": "NumberField",
-                "DefaultValue": "42"
+                "DefaultValue": "42",
+                "Required":false
+            },
+            {
+                "Label": "Text",
+                "Key": "Text",
+                "Type": "TextView",
+                "DefaultValue": "Don't panic!",
+                "Required":false
+            },
+            {
+                "Label": "Brille",
+                "Key": "Glasses",
+                "Type": "Switch",
+                "DefaultValue": "False",
+                "Required":false
+            },
+            {
+                "Label": "Liter",
+                "Key": "Liter",
+                "Type": "Slider",
+                "DefaultValue": "42",
+                "Required":false
+            },
+            {
+                "Label": "Monitore",
+                "Key": "Displays",
+                "Type": "Stepper",
+                "DefaultValue": "2",
+                "Required":false
             },
             {
                 "Label": "Name",
                 "Key": "Name",
                 "Type": "TextField",
-                "DefaultValue": "Kristian"
+                "DefaultValue": "Kristian",
+                "Required":true
             }
         ],
         "Options": [
